@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+header {
+  position: relative;
+  height: 100vh;
+  background-color: orange; }
+  header .top_menu {
+    width: 100vw;
+    height: 7vh;
+    position: fixed;
+    z-index: 5;
+    background-color: black;
+    color: white;
+    transform: translateY(-7vh);
+    transition: transform .5s; }
+    header .top_menu .logo_menu {
+      color: white;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  header .top_menu_show {
+    transform: translateY(0); }
+  header .main_screen {
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    height: 100vh;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    animation: bgcolor;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out; }
+    header .main_screen .sentence,
+    header .main_screen .phone {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      header .main_screen .sentence img,
+      header .main_screen .phone img {
+        padding: 0 7px; }
+
+main {
+  height: 30vh; }
+
+@keyframes bgcolor {
+  0% {
+    background-color: black; }
+  100% {
+    background-color: transparent; } }
