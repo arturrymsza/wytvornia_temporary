@@ -1,6 +1,5 @@
 .main {
   width: 100vw;
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -14,4 +13,5 @@ h2 {
 
 img {
   max-width: 75vw;
+  padding: 3vw;
 }
