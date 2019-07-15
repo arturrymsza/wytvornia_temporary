@@ -15,3 +15,9 @@ img {
   max-width: 75vw;
   padding: 3vw;
 }
+
+.karta {
+  margin: 2vw;
+  width: 75vw;
+  max-width: 800px;
+}
